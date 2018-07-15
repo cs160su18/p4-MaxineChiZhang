@@ -30,26 +30,9 @@
     // getting the URL (you may want to use for Exercise 3)
     var url = window.location.href;
 
+    // var socket = new WebSocket(
+    //     'ws://your url here:8765/');
 
-  //codes to implement exercise 1
-  
-//   // create a new websocket connecting to the server 
-//   var socket = new WebSocket( 'ws://p4-MaxineChiZhang-511895786181893.codeanyapp.com:8765/' );
-  
-//   // triggered when receiving a message from the server 
-//   socket.onmessage = function (receivedMessage) { 
-//     // do something when you receive a message
-// };
-  
-//   // use when sending a message to the server 
-//   // to be broadcasted to all clients 
-//   socket.send(message);
-//   // notify console if socket closes unexpectedly 
-//   socket.onclose = function (e) { console .error( 'Chat socket closed unexpectedly' );
-// };
-  
-  
-  //codes to implement exercise 2
   
   var path = new paper.Path.Circle({
 // 	  center: paper.view.center,
@@ -98,26 +81,20 @@ window.addEventListener("deviceorientation", handleOrientation, true);
       }
 });
   
-  massage = ''
   
-  tool.onMouseMove = function(event) {
-    
-//     global message
-    
-    var circle = new paper.Path.Circle({
-		center: event.middlePoint,
-		radius: 10,
-    fillColor: 'black'
-	});
-    console.log(event.point.x, event.point.y);
-//     massage += (event.point.x,event.point.y);
-//     console.log(message);
+  
+//   tool.onMouseMove = function(event) {
+//     var circle = new paper.Path.Circle({
+// 		center: event.middlePoint,
+// 		radius: 10
+// 	});
 
 // 	circle.fillColor = {
 // 	    hue: event.count*1.5,
 // 	    saturation: 1,
 // 	    brightness: 1
 // 	}
-  }
+//   }
+  
 </script>
 </html>
